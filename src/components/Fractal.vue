@@ -24,6 +24,11 @@ export default {
   },
   mounted() {
     this.generate();
+
+    // Add auto height and auto width for canvas
+    const canvas = document.getElementById("fCanvas");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
   },
   data() {
     return {
