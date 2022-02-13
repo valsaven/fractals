@@ -1,6 +1,5 @@
 <template>
   <div class="fractal">
-    <h1>The Tree</h1>
     <div class="generate-form">
       <label for="fLength">Length</label>
       <input type="number" id="fLength" name="fLength" v-model="length" @change="generate">

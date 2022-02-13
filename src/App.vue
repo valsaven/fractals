@@ -1,19 +1,16 @@
-<template>
-  <div id="app">
-    <Fractal/>
-  </div>
-</template>
-
-<script>
+<script setup>
 import Fractal from './components/Fractal.vue';
-
-export default {
-  name: 'app',
-  components: {
-    Fractal,
-  },
-};
 </script>
+
+<template>
+  <header>
+    <h1>The Tree</h1>
+  </header>
+
+  <main>
+    <Fractal/>
+  </main>
+</template>
 
 <style>
 #app {
