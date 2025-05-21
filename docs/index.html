@@ -1,1 +1,46 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>fractals</title><link as=style href=/fractals/css/app.40d5d4e0.css rel=preload><link as=script href=/fractals/js/app.ff448c53.js rel=preload><link as=script href=/fractals/js/vendors~app.8ed9a393.js rel=preload><link href=/fractals/css/app.40d5d4e0.css rel=stylesheet></head><body><noscript><strong>We're sorry but fractals doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script type=text/javascript src=/fractals/js/vendors~app.8ed9a393.js></script><script type=text/javascript src=/fractals/js/app.ff448c53.js></script></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Tree</title>
+    <script type="module" crossorigin src="/assets/index-DGLUOx46.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-xyBHzBe4.css">
+  </head>
+
+  <body>
+    <noscript>
+      <strong>We're sorry: fractals don't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <div class="fractal">
+      <header>
+        <h1 class="fractal__title">The Tree</h1>
+      </header>
+
+      <main class="fractal__body">
+        <div class="fractal__actions">
+          <label for="fLength">Length</label>
+          <input type="number" id="fLength" name="fLength" value="90">
+
+          <label for="fAngle">Angle</label>
+          <input type="number" id="fAngle" name="fAngle" value="0.5" step="0.1">
+
+          <label for="fScale">Scale</label>
+          <input type="number" id="fScale" name="fScale" value="0.75" step="0.01">
+        </div>
+
+        <div class="fractal__container">
+          <canvas class="fractal__canvas"></canvas>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>

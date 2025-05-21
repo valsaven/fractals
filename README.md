@@ -4,17 +4,17 @@ Your daily fractal tree
 ## Setup
 
 ```sh
-npm install
+bun install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+bun run dev
 ```
 
 ### Compile and Minify for Production
 
 ```sh
-npm run build
+bun run build
 ```

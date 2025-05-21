@@ -1,17 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>The Tree</title>
   </head>
+
   <body>
     <noscript>
-      <strong>We're sorry but fractals doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry: fractals don't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
 
-    <div id="app"></div>
+    <div class="fractal">
+      <header>
+        <h1 class="fractal__title">The Tree</h1>
+      </header>
+
+      <main class="fractal__body">
+        <div class="fractal__actions">
+          <label for="fLength">Length</label>
+          <input type="number" id="fLength" name="fLength" value="90">
+
+          <label for="fAngle">Angle</label>
+          <input type="number" id="fAngle" name="fAngle" value="0.5" step="0.1">
+
+          <label for="fScale">Scale</label>
+          <input type="number" id="fScale" name="fScale" value="0.75" step="0.01">
+        </div>
+
+        <div class="fractal__container">
+          <canvas class="fractal__canvas"></canvas>
+        </div>
+      </main>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
